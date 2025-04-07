@@ -1,0 +1,36 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "logo-128.png"
+      }
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [ "contentStyle.css", "assets/index-neCZ0HHe.css" ],
+      "js": [ "assets/index.tsx-loader-BRg_3ICL.js" ],
+      "matches": [ "https://chatgpt.com/*", "https://*.chatgpt.com/*", "https://*.chat.com/*", "https://chat.com/*", "*://*.chatgpt.com/*", "*://*.chat.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Natural ChatGPT AI text to speech (TTS) for PDFs, articles, & docs. Download or read aloud using high-quality voices with GPT Reader",
+   "devtools_page": "src/pages/devtools/index.html",
+   "icons": {
+      "128": "logo-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmXOCkHVeNDAUma5lmh1PUhWTMpYhHxzd9T0T1hgvxOmtJNACpKO90Xb0lqaIwtxMqWypmrRzcngHjI/QKjKu8mq5vkl81LOjOfL81Nf0TfCziQw7XnQtCAeTCb/ViwEDlVFmLWNe9swEoc23cmzpc6etjRgRp4gW+/Fv4WuYCfF0bC39aWCxdWf8FplkORN76QafkYCXyALnBNYzYHOqBmkO3fOilMaF09Q5q1BQG97NLFM6hNtV7/ymQD1JY/Kt/zygGD+1YE1KBFrb7dqrhReWIpY1o+QOnIVytxfjhy3HqPKTKuxCuayFywiLIggQdDoJTrnFzdz42VtkDpSOEQIDAQAB",
+   "manifest_version": 3,
+   "name": "GPT Reader: Free AI Text to Speech with ChatGPT Voices, TTS",
+   "options_ui": {
+      "page": "src/pages/options/index.html"
+   },
+   "permissions": [ "activeTab", "tabs", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.10",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*.chat.com/*", "*://*.chatgpt.com/*", "https://*.chat.com/*", "https://*.chatgpt.com/*", "https://chat.com/*", "https://chatgpt.com/*" ],
+      "resources": [ "contentStyle.css", "icon-128.png", "icon-32.png", "logo-128.png", "pdf.worker.js", "injected.js", "assets/client-C-PqnIbe.js", "assets/utils-B7UC0r1i.js", "assets/_commonjsHelpers-BosuxZz1.js", "assets/__vite-browser-external-BIHI7g3E.js", "assets/index.tsx-C3p4UXav.js" ],
+      "use_dynamic_url": false
+   } ]
+}
